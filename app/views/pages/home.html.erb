@@ -1,1 +1,10 @@
 teste
+
+<% members = ["thanh", "dimitri", "germain", "damien", "julien"] %>
+
+<h2>Meet our team</h2>
+<ol>
+  <% members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
