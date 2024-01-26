@@ -34,7 +34,8 @@ puts "Criando 8 novas jogadoras"
     derby_number: numeros_derby[i],
     league: ligas.sample, # Seleção randômica de uma liga
     email: "#{nomes[i].downcase}@spacejammer.com",
-    encrypted_password: "Space123"
+    password: "Space123", # Use password ao invés de encrypted_password
+    password_confirmation: "Space123" # Adicione isso para confirmar a senha
   )
 end
 
