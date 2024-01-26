@@ -4,8 +4,12 @@ class DeviseCreateJogadoras < ActiveRecord::Migration[7.1]
   def change
     create_table :jogadoras do |t|
       # Campos de jogadora / Player fields
-      t.string      :first_name
-      t.string      :last_name
+      t.string      :calling_name
+      t.string      :family_name
+      t.string      :derby_name
+      t.string      :derby_number
+      t.string      :league
+
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""
