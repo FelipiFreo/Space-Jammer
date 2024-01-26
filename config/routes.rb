@@ -11,5 +11,6 @@ Rails.application.routes.draw do
 
 root to: "pages#home"
 get "about", to: "pages#about"
+get "players", to: "players#index"
 
 end
