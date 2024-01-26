@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema[7.1].define(version: 2024_01_26_005657) do
   create_table "jogadoras", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+    t.string "calling_name"
+    t.string "family_name"
+    t.string "derby_name"
+    t.string "derby_number"
+    t.string "league"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
